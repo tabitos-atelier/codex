@@ -1,4 +1,4 @@
-# OS generated files
+# OS and IDE files
 .DS_Store
 .DS_Store?
 ._*
@@ -9,3 +9,10 @@ Thumbs.db
 
 # VS Code
 .vscode/
+
+# Local tools and configuration
+.claude/
+CLAUDE.md
+
+# Obsidian local settings
+.obsidian/
