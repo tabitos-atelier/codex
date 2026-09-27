@@ -2,7 +2,7 @@
 
 ## 📜 この設計図について
 
-この設計図は、WSL2 Ubuntu 24.04.1 LTS 環境で、CUDA 13.0環境を構築し、Swallow-13Bで動作検証するための完全ガイドです。
+この設計図は、WSL2 Ubuntu 24.04.1 LTS 環境で、CUDA 13.0環境を構築し、Swallow-13Bで動作検証するための完全ガイドだ。
 
 **目的:**
 - WSL2 + CUDA 13.0環境の完全構築
@@ -19,7 +19,7 @@
 
 ### NVIDIA Studioドライバーの更新
 
-WSL2でCUDAを使用する前に、Windows側のNVIDIAドライバーを最新版に更新する必要があります。
+WSL2でCUDAを使用する前に、Windows側のNVIDIAドライバーを最新版に更新する必要がある。
 
 #### 手動ダウンロード方式
 
@@ -33,7 +33,7 @@ WSL2でCUDAを使用する前に、Windows側のNVIDIAドライバーを最新�
 
 #### NVIDIAアプリ方式（推奨）
 
-GeForce Experienceのダウンロードボタンから、NVIDIAアプリ（NVIDIA App）をインストールします。
+GeForce Experienceのダウンロードボタンから、NVIDIAアプリ（NVIDIA App）をインストールする。
 
 1. NVIDIAアプリを起動
 2. 「ドライバー」タブを選択
@@ -42,7 +42,7 @@ GeForce Experienceのダウンロードボタンから、NVIDIAアプリ（NVIDI
 5. 「クリーンインストール」にチェックを入れる
 6. インストール実行
 
-**重要:** クリーンインストールにより、古いドライバーの残骸が完全に削除され、新しいドライバーがクリーンな状態でインストールされます。
+**重要:** クリーンインストールにより、古いドライバーの残骸が完全に削除され、新しいドライバーがクリーンな状態でインストールされる。
 
 #### 確認方法
 
@@ -174,7 +174,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ### Miniforge環境の準備（推奨）
 
-Miniforgeは、conda-forgeチャンネルをデフォルトで利用し、Mambaパッケージマネージャーを含む軽量なディストリビューションです。これにより、Anaconda社の商用ライセンス制限を回避し、高速なパッケージ管理が可能になります。
+Miniforgeは、conda-forgeチャンネルをデフォルトで利用し、Mambaパッケージマネージャーを含む軽量なディストリビューションだ。これにより、Anaconda社の商用ライセンス制限を回避し、高速なパッケージ管理が可能になる。
 
 ```bash
 # Miniforge (Mambaforge) インストーラーをダウンロード
@@ -290,7 +290,7 @@ llama-cpp-python OK
 
 ### モデルのダウンロード
 
-環境が正しく構築されたかを検証するため、Swallow-13B Q4_K_M量子化版をダウンロードします。
+環境が正しく構築されたかを検証するため、Swallow-13B Q4_K_M量子化版をダウンロードする。
 
 ```bash
 # Swallow-13B Q4_K_M量子化版をダウンロード
@@ -308,7 +308,7 @@ wget https://huggingface.co/mmnga/tokyotech-llm-Swallow-13b-instruct-v0.1-gguf/r
 python swallow-13b.py
 ```
 
-起動後、ターミナルに以下のようなメッセージとURLが表示されます：
+起動後、ターミナルに以下のようなメッセージとURLが表示される：
 
 ```
 準備完了。賢者との対話を開始できます。
@@ -316,7 +316,7 @@ python swallow-13b.py
 Running on local URL:  http://127.0.0.1:7860
 ```
 
-Ctrlキーを押しながらURLをクリックすると、ブラウザでGradio UIが開きます。
+Ctrlキーを押しながらURLをクリックすると、ブラウザでGradio UIが開く。
 
 **使用方法:**
 1. 「旅人からの問いかけ」欄に質問を入力
@@ -328,7 +328,7 @@ Ctrlキーを押しながらURLをクリックすると、ブラウザでGradio 
 - CPU使用時: 約20秒
 - プリビルドGPU版: 約10秒
 
-この約27倍の速度差が、ソースビルド版の最大の利点です。
+この約27倍の速度差が、ソースビルド版の最大の利点だ。
 
 ## 🔧 トラブルシューティング
 
